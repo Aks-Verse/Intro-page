@@ -34,11 +34,15 @@
             Your browser does not support the video tag.
         </video>
 
-        <!-- Overlay Video -->
-        <video autoplay loop muted playsinline id="overlay-video">
-            <source src="assets/overlay-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <!-- Overlay Video with Mute/Unmute Button -->
+        <div id="overlay-video-container">
+            <video autoplay loop muted playsinline id="overlay-video">
+                <source src="assets/overlay-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Mute/Unmute Button -->
+            <button id="mute-btn">🔇</button>
+        </div>
 
         <!-- Buttons -->
         <div class="buttons">
