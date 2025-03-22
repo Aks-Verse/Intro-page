@@ -1,3 +1,14 @@
+// Hide Loading Screen Once Everything is Loaded
+window.addEventListener('load', function() {
+    const loadingScreen = document.getElementById('loading-screen');
+    loadingScreen.classList.add('hide'); // Add the 'hide' class to fade out
+
+    // Remove the loading screen from the DOM after the fade-out animation
+    setTimeout(() => {
+        loadingScreen.remove();
+    }, 500); // Match the duration of the CSS transition (0.5s)
+});
+
 // Wait for the intro video to end
 document.getElementById('intro-video').addEventListener('ended', function() {
     document.getElementById('tap-screen').style.display = 'flex';
