@@ -81,6 +81,13 @@ body {
     margin-top: 20px;
 }
 
+/* Row Layout for Discord & Instagram Buttons */
+.btn-row {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
 /* General Button Styles */
 .btn {
     text-decoration: none;
@@ -95,9 +102,14 @@ body {
     background: rgba(255, 255, 255, 0.2);  /* Semi-transparent White */
     border: 2px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    flex: 1;  /* Make buttons equal width */
+}
+
+/* Full Introduction Button */
+.full-intro {
+    width: 100%;  /* Full Width */
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Logo Size Adjust */
@@ -114,11 +126,6 @@ body {
 /* Discord Button */
 .discord {
     background: rgba(88, 101, 242, 0.3);  /* Blue */
-}
-
-/* Full Introduction Button */
-.full-intro {
-    background: rgba(0, 0, 0, 0.5);  /* Black */
 }
 
 /* Button Hover Effect */
