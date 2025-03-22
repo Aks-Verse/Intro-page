@@ -139,45 +139,25 @@ body {
     white-space: nowrap;  /* Text will stay in one line */
 }
 
-/* Glowing Border Effect */
-.btn::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    border-radius: 12px;
-    z-index: -1;
-    background: linear-gradient(45deg, 
-        rgba(255, 255, 255, 0.8), 
-        rgba(255, 255, 255, 0.4), 
-        rgba(255, 255, 255, 0.8));
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.btn:hover::before {
-    opacity: 1;  /* Show glowing effect on hover */
-}
-
-/* Discord Button Glow */
+/* Discord Button */
 .discord {
     background: rgba(88, 101, 242, 0.3);  /* Blue */
-    box-shadow: 0 0 10px rgba(88, 101, 242, 0.8), 0 0 20px rgba(88, 101, 242, 0.6), 0 0 30px rgba(88, 101, 242, 0.4); /* Glow effect */
+    border: 2px solid #5865F2;  /* Solid blue border */
+    width: calc(50% - 7.5px);  /* Half width minus half of gap */
 }
 
-/* Instagram Button Glow */
+/* Instagram Button */
 .instagram {
     background: rgba(225, 48, 108, 0.3);  /* Light Pink */
-    box-shadow: 0 0 10px rgba(225, 48, 108, 0.8), 0 0 20px rgba(225, 48, 108, 0.6), 0 0 30px rgba(225, 48, 108, 0.4); /* Glow effect */
+    border: 2px solid #E1306C;  /* Solid pink border */
+    width: calc(50% - 7.5px);  /* Half width minus half of gap */
 }
 
-/* Full Introduction Button Glow */
+/* Full Introduction Button */
 .full-intro {
     background: rgba(0, 0, 0, 0.5);
-    border: 2px solid transparent;  /* Transparent border initially */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4); /* Glow effect */
+    border: 2px solid #FFFFFF;  /* Solid white border */
+    width: 100%;  /* Full width */
 }
 
 /* Logo Size Adjust */
