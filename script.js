@@ -18,9 +18,9 @@ document.getElementById('tap-screen').addEventListener('click', function() {
     const fullIntroButton = document.querySelector('.full-intro');
 
     setTimeout(() => {
-        discordButton.style.transitionDelay = '0.5s';
-        instagramButton.style.transitionDelay = '1s';
-        fullIntroButton.style.transitionDelay = '1.5s';
+        discordButton.style.transitionDelay = '0.2s';  /* Faster delay */
+        instagramButton.style.transitionDelay = '0.4s';  /* Faster delay */
+        fullIntroButton.style.transitionDelay = '0.6s';  /* Faster delay */
     }, 100);
 });
 
