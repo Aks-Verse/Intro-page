@@ -122,6 +122,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;  /* Text will stay in one line */
 }
 
 /* Glowing Border Effect */
