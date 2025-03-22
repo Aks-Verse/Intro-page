@@ -108,6 +108,15 @@ body {
     width: 90%;
     max-width: 400px;
     margin-top: 20px;
+    opacity: 0;  /* Initially hidden */
+    transform: translateY(50px);  /* Start position for slide-in */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Slide-in animation when buttons are visible */
+.buttons.visible {
+    opacity: 1;  /* Fully visible */
+    transform: translateY(0);  /* Final position */
 }
 
 /* Row Layout for Discord & Instagram Buttons */
