@@ -108,22 +108,26 @@ body {
     width: 90%;
     max-width: 400px;
     margin-top: 20px;
-    opacity: 0;  /* Initially hidden */
-    transform: translateY(50px);  /* Start position for slide-in */
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    position: relative;
 }
 
-/* Slide-in animation when buttons are visible */
-.buttons.visible {
-    opacity: 1;  /* Fully visible */
-    transform: translateY(0);  /* Final position */
-}
-
-/* Row Layout for Discord & Instagram Buttons */
-.btn-row {
-    display: flex;
-    gap: 15px;
+/* Black Layer for Buttons */
+.buttons::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);  /* Black layer */
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+/* Hide Black Layer After Animation */
+.buttons.visible::before {
+    opacity: 0;
 }
 
 /* General Button Styles */
@@ -141,32 +145,44 @@ body {
     border: 2px solid transparent;  /* Transparent border initially */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 100%;  /* Full width for all buttons */
-    position: relative;  /* For glowing effect */
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     white-space: nowrap;  /* Text will stay in one line */
+    opacity: 0;  /* Initially hidden */
+    transform: translateX(-100%);  /* Start position for slide-in */
+    transition: opacity 1s ease, transform 1s ease;
 }
 
-/* Discord Button */
+/* Discord Button Slide-In */
 .discord {
     background: rgba(88, 101, 242, 0.3);  /* Blue */
     border: 2px solid #5865F2;  /* Solid blue border */
     width: calc(50% - 7.5px);  /* Half width minus half of gap */
+    transform: translateX(-100%);  /* Start from left */
 }
 
-/* Instagram Button */
+/* Instagram Button Slide-In */
 .instagram {
     background: rgba(225, 48, 108, 0.3);  /* Light Pink */
     border: 2px solid #E1306C;  /* Solid pink border */
     width: calc(50% - 7.5px);  /* Half width minus half of gap */
+    transform: translateX(100%);  /* Start from right */
 }
 
-/* Full Introduction Button */
+/* Full Introduction Button Slide-In */
 .full-intro {
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid #FFFFFF;  /* Solid white border */
     width: 100%;  /* Full width */
+    transform: translateY(100%);  /* Start from bottom */
+}
+
+/* Buttons Visible State */
+.buttons.visible .btn {
+    opacity: 1;  /* Fully visible */
+    transform: translateX(0) translateY(0);  /* Final position */
 }
 
 /* Logo Size Adjust */
