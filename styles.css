@@ -133,6 +133,10 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 100%;  /* Full width for all buttons */
     position: relative;  /* For glowing effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;  /* Text will stay in one line */
 }
 
 /* Glowing Border Effect */
@@ -172,6 +176,7 @@ body {
 .btn img {
     width: 30px;  /* Adjust logo width */
     height: auto;  /* Maintain aspect ratio */
+    margin-right: 10px;  /* Space between logo and text */
 }
 
 /* Instagram Button */
