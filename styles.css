@@ -100,6 +100,12 @@ body {
     gap: 10px;
 }
 
+/* Logo Size Adjust */
+.btn img {
+    width: 30px;  /* Adjust logo width */
+    height: auto;  /* Maintain aspect ratio */
+}
+
 /* Instagram Button */
 .instagram {
     background: rgba(225, 48, 108, 0.3);  /* Light Pink */
