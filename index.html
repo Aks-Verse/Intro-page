@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhil - Verse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Intro Video -->
+    <div id="intro">
+        <video autoplay muted id="intro-video">
+            <source src="assets/intro-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Tap to Continue Screen -->
+    <div id="tap-screen">
+        <p>Tap to Continue</p>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- Background Video -->
+        <video autoplay loop muted playsinline id="bg-video">
+            <source src="assets/bg-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <a href="https://www.instagram.com/whampyr" class="btn instagram">
+                <img src="assets/instagram-logo.png" alt="Instagram Logo">
+                Instagram →
+            </a>
+            <a href="https://discord.com/users/akhil98" class="btn discord">
+                <img src="assets/discord-logo.png" alt="Discord Logo">
+                Discord →
+            </a>
+            <a href="#" class="btn full-intro" onclick="startSite()">
+                Full Introduction →
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
