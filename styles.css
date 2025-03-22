@@ -94,7 +94,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: white;
-    padding: 15px 40px;
+    padding: 15px 20px;  /* Reduced padding for smaller buttons */
     border-radius: 12px;
     text-align: center;
     transition: 0.3s;
@@ -102,12 +102,16 @@ body {
     background: rgba(255, 255, 255, 0.2);  /* Semi-transparent White */
     border: 2px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    flex: 1;  /* Make buttons equal width */
+}
+
+/* Discord and Instagram Buttons */
+.discord, .instagram {
+    flex: 1;  /* Equal width for Discord and Instagram buttons */
 }
 
 /* Full Introduction Button */
 .full-intro {
-    width: 100%;  /* Full Width */
+    width: 100%;  /* Full width for Full Introduction button */
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid rgba(255, 255, 255, 0.3);
 }
