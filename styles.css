@@ -41,7 +41,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
     display: none;
     align-items: center;
     justify-content: center;
@@ -50,6 +49,18 @@ body {
     cursor: pointer;
     z-index: 20;
     text-align: center;
+    overflow: hidden;
+}
+
+/* Background Video for Tap Screen */
+#tap-bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 /* Styling for <akhil - verse> text */
@@ -64,6 +75,7 @@ body {
     color: #fff;
     opacity: 0.8;
     margin-top: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4); /* Glow effect */
 }
 
 /* Main Content */
