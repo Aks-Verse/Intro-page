@@ -111,25 +111,6 @@ body {
     position: relative;
 }
 
-/* Black Layer for Buttons */
-.buttons::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);  /* Black layer */
-    z-index: -1;
-    opacity: 1;
-    transition: opacity 0.5s ease;  /* Faster transition */
-}
-
-/* Hide Black Layer After Animation */
-.buttons.visible::before {
-    opacity: 0;
-}
-
 /* General Button Styles */
 .btn {
     text-decoration: none;
@@ -139,7 +120,6 @@ body {
     padding: 8px 20px;  /* Further reduced padding for thinner buttons */
     border-radius: 12px;
     text-align: center;
-    transition: opacity 0.5s ease, transform 0.5s ease;  /* Faster transition */
     backdrop-filter: blur(10px);  /* Glass Effect */
     background: rgba(255, 255, 255, 0.2);  /* Semi-transparent White */
     border: 2px solid transparent;  /* Transparent border initially */
@@ -150,37 +130,27 @@ body {
     align-items: center;
     justify-content: center;
     white-space: nowrap;  /* Text will stay in one line */
-    opacity: 0;  /* Initially hidden */
 }
 
-/* Discord Button Slide-In */
+/* Discord Button */
 .discord {
     background: rgba(88, 101, 242, 0.3);  /* Blue */
     border: 2px solid #5865F2;  /* Solid blue border */
     width: calc(50% - 7.5px);  /* Half width minus half of gap */
-    transform: translateX(-100%);  /* Start from left */
 }
 
-/* Instagram Button Slide-In */
+/* Instagram Button */
 .instagram {
     background: rgba(225, 48, 108, 0.3);  /* Light Pink */
     border: 2px solid #E1306C;  /* Solid pink border */
     width: calc(50% - 7.5px);  /* Half width minus half of gap */
-    transform: translateX(100%);  /* Start from right */
 }
 
-/* Full Introduction Button Slide-In */
+/* Full Introduction Button */
 .full-intro {
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid #FFFFFF;  /* Solid white border */
     width: 100%;  /* Full width */
-    transform: translateY(100%);  /* Start from bottom */
-}
-
-/* Buttons Visible State */
-.buttons.visible .btn {
-    opacity: 1;  /* Fully visible */
-    transform: translateX(0) translateY(0);  /* Final position */
 }
 
 /* Logo Size Adjust */
