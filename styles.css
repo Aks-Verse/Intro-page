@@ -139,7 +139,7 @@ body {
     padding: 8px 20px;  /* Further reduced padding for thinner buttons */
     border-radius: 12px;
     text-align: center;
-    transition: 0.3s;
+    transition: opacity 1s ease, transform 1s ease;
     backdrop-filter: blur(10px);  /* Glass Effect */
     background: rgba(255, 255, 255, 0.2);  /* Semi-transparent White */
     border: 2px solid transparent;  /* Transparent border initially */
@@ -151,8 +151,6 @@ body {
     justify-content: center;
     white-space: nowrap;  /* Text will stay in one line */
     opacity: 0;  /* Initially hidden */
-    transform: translateX(-100%);  /* Start position for slide-in */
-    transition: opacity 1s ease, transform 1s ease;
 }
 
 /* Discord Button Slide-In */
@@ -195,4 +193,4 @@ body {
 /* Button Hover Effect */
 .btn:hover {
     opacity: 0.8;
-}
+    }
