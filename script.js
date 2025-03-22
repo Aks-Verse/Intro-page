@@ -18,6 +18,9 @@ function startSite() {
 const video = document.getElementById('overlay-video');
 const muteBtn = document.getElementById('mute-btn');
 
+// Ensure video is unmuted by default
+video.muted = false;
+
 muteBtn.addEventListener('click', () => {
     video.muted = !video.muted;  // Toggle mute
     muteBtn.textContent = video.muted ? '🔇' : '🔊';  // Update icon
