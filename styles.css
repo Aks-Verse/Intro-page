@@ -108,7 +108,13 @@ body {
     width: 90%;
     max-width: 400px;
     margin-top: 20px;
-    position: relative;
+}
+
+/* Row Layout for Discord & Instagram Buttons */
+.btn-row {
+    display: flex;
+    gap: 15px;
+    width: 100%;
 }
 
 /* General Button Styles */
@@ -117,47 +123,38 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: white;
-    padding: 8px 20px;  /* Further reduced padding for thinner buttons */
+    padding: 15px 40px;
     border-radius: 12px;
     text-align: center;
+    transition: 0.3s;
     backdrop-filter: blur(10px);  /* Glass Effect */
     background: rgba(255, 255, 255, 0.2);  /* Semi-transparent White */
-    border: 2px solid transparent;  /* Transparent border initially */
+    border: 2px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 100%;  /* Full width for all buttons */
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;  /* Text will stay in one line */
-}
-
-/* Discord Button */
-.discord {
-    background: rgba(88, 101, 242, 0.3);  /* Blue */
-    border: 2px solid #5865F2;  /* Solid blue border */
-    width: calc(50% - 7.5px);  /* Half width minus half of gap */
-}
-
-/* Instagram Button */
-.instagram {
-    background: rgba(225, 48, 108, 0.3);  /* Light Pink */
-    border: 2px solid #E1306C;  /* Solid pink border */
-    width: calc(50% - 7.5px);  /* Half width minus half of gap */
+    flex: 1;  /* Make buttons equal width */
 }
 
 /* Full Introduction Button */
 .full-intro {
+    width: 100%;  /* Full Width */
     background: rgba(0, 0, 0, 0.5);
-    border: 2px solid #FFFFFF;  /* Solid white border */
-    width: 100%;  /* Full width */
+    border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Logo Size Adjust */
 .btn img {
     width: 30px;  /* Adjust logo width */
     height: auto;  /* Maintain aspect ratio */
-    margin-right: 10px;  /* Space between logo and text */
+}
+
+/* Instagram Button */
+.instagram {
+    background: rgba(225, 48, 108, 0.3);  /* Light Pink */
+}
+
+/* Discord Button */
+.discord {
+    background: rgba(88, 101, 242, 0.3);  /* Blue */
 }
 
 /* Button Hover Effect */
