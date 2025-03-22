@@ -161,15 +161,23 @@ body {
     opacity: 1;  /* Show glowing effect on hover */
 }
 
-/* Discord and Instagram Buttons */
-.discord, .instagram {
-    width: calc(50% - 7.5px);  /* Half width minus half of gap */
+/* Discord Button Glow */
+.discord {
+    background: rgba(88, 101, 242, 0.3);  /* Blue */
+    box-shadow: 0 0 10px rgba(88, 101, 242, 0.8), 0 0 20px rgba(88, 101, 242, 0.6), 0 0 30px rgba(88, 101, 242, 0.4); /* Glow effect */
 }
 
-/* Full Introduction Button */
+/* Instagram Button Glow */
+.instagram {
+    background: rgba(225, 48, 108, 0.3);  /* Light Pink */
+    box-shadow: 0 0 10px rgba(225, 48, 108, 0.8), 0 0 20px rgba(225, 48, 108, 0.6), 0 0 30px rgba(225, 48, 108, 0.4); /* Glow effect */
+}
+
+/* Full Introduction Button Glow */
 .full-intro {
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid transparent;  /* Transparent border initially */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4); /* Glow effect */
 }
 
 /* Logo Size Adjust */
@@ -177,16 +185,6 @@ body {
     width: 30px;  /* Adjust logo width */
     height: auto;  /* Maintain aspect ratio */
     margin-right: 10px;  /* Space between logo and text */
-}
-
-/* Instagram Button */
-.instagram {
-    background: rgba(225, 48, 108, 0.3);  /* Light Pink */
-}
-
-/* Discord Button */
-.discord {
-    background: rgba(88, 101, 242, 0.3);  /* Blue */
 }
 
 /* Button Hover Effect */
