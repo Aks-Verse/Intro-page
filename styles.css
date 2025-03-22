@@ -103,14 +103,14 @@ body {
 /* Overlay Video */
 #overlay-video {
     position: absolute;
-    top: 20px;  /* Adjust as needed */
+    top: 50px;  /* Adjusted to move overlay higher */
     left: 50%;
     transform: translateX(-50%);
-    width: calc(100% - 30px);  /* Discord + Instagram buttons ke width ke barabar */
-    max-width: 400px;  /* Adjust as needed */
-    z-index: 10;  /* Ensure it's above the background video */
-    border-radius: 12px;  /* Optional: Add rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);  /* Optional: Add shadow */
+    width: calc(100% - 30px);
+    max-width: 400px;
+    z-index: 10;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Buttons Container */
@@ -121,7 +121,9 @@ body {
     align-items: center;
     width: 90%;
     max-width: 400px;
-    margin-top: 20px;
+    margin-top: 100px;  /* Adjusted to ensure buttons are below overlay */
+    z-index: 20;  /* Ensure buttons are above the overlay */
+    position: relative;  /* Required for z-index to work */
 }
 
 /* Row Layout for Discord & Instagram Buttons */
@@ -137,48 +139,48 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: white;
-    padding: 8px 20px;  /* Further reduced padding for thinner buttons */
+    padding: 8px 20px;
     border-radius: 12px;
     text-align: center;
     transition: 0.3s;
     backdrop-filter: blur(10px);  /* Glass Effect */
     background: rgba(255, 255, 255, 0.2);  /* Semi-transparent White */
-    border: 2px solid transparent;  /* Transparent border initially */
+    border: 2px solid transparent;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 100%;  /* Full width for all buttons */
-    position: relative;  /* For glowing effect */
+    width: 100%;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    white-space: nowrap;  /* Text will stay in one line */
+    white-space: nowrap;
 }
 
 /* Discord Button */
 .discord {
     background: rgba(88, 101, 242, 0.3);  /* Blue */
-    border: 2px solid #5865F2;  /* Solid blue border */
-    width: calc(50% - 7.5px);  /* Half width minus half of gap */
+    border: 2px solid #5865F2;
+    width: calc(50% - 7.5px);
 }
 
 /* Instagram Button */
 .instagram {
     background: rgba(225, 48, 108, 0.3);  /* Light Pink */
-    border: 2px solid #E1306C;  /* Solid pink border */
-    width: calc(50% - 7.5px);  /* Half width minus half of gap */
+    border: 2px solid #E1306C;
+    width: calc(50% - 7.5px);
 }
 
 /* Full Introduction Button */
 .full-intro {
     background: rgba(0, 0, 0, 0.5);
-    border: 2px solid #FFFFFF;  /* Solid white border */
-    width: 100%;  /* Full width */
+    border: 2px solid #FFFFFF;
+    width: 100%;
 }
 
 /* Logo Size Adjust */
 .btn img {
-    width: 30px;  /* Adjust logo width */
-    height: auto;  /* Maintain aspect ratio */
-    margin-right: 10px;  /* Space between logo and text */
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
 }
 
 /* Button Hover Effect */
