@@ -13,3 +13,12 @@ document.getElementById('tap-screen').addEventListener('click', function() {
 function startSite() {
     alert('Full Introduction clicked!');
 }
+
+// Mute/Unmute Functionality
+const video = document.getElementById('overlay-video');
+const muteBtn = document.getElementById('mute-btn');
+
+muteBtn.addEventListener('click', () => {
+    video.muted = !video.muted;  // Toggle mute
+    muteBtn.textContent = video.muted ? '🔇' : '🔊';  // Update icon
+});
