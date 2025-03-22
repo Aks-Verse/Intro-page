@@ -126,7 +126,7 @@ body {
     right: 10px;
     background: rgba(0, 0, 0, 0.5);
     border: none;
-    color: white;
+    color: white; /* Ensure icon is white */
     font-size: 20px;
     cursor: pointer;
     border-radius: 50%;
@@ -140,6 +140,11 @@ body {
 
 #mute-btn:hover {
     background: rgba(0, 0, 0, 0.8);
+}
+
+/* Font Awesome Icon Styling */
+#mute-btn i {
+    color: white; /* Ensure icon is white */
 }
 
 /* Buttons Container */
