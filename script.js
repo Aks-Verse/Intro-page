@@ -10,9 +10,18 @@ document.getElementById('tap-screen').addEventListener('click', function() {
 
     // Add slide-in effect to buttons
     const buttons = document.querySelector('.buttons');
+    buttons.classList.add('visible');
+
+    // Add delay for each button
+    const discordButton = document.querySelector('.discord');
+    const instagramButton = document.querySelector('.instagram');
+    const fullIntroButton = document.querySelector('.full-intro');
+
     setTimeout(() => {
-        buttons.classList.add('visible');
-    }, 100);  // Delay for smooth transition
+        discordButton.style.transitionDelay = '0.5s';
+        instagramButton.style.transitionDelay = '1s';
+        fullIntroButton.style.transitionDelay = '1.5s';
+    }, 100);
 });
 
 // Full Introduction Button functionality
