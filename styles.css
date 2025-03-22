@@ -106,8 +106,8 @@ body {
     top: 20px;  /* Adjust as needed */
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;  /* Adjust as needed */
-    max-width: 600px;  /* Adjust as needed */
+    width: calc(100% - 30px);  /* Discord + Instagram buttons ke width ke barabar */
+    max-width: 400px;  /* Adjust as needed */
     z-index: 10;  /* Ensure it's above the background video */
     border-radius: 12px;  /* Optional: Add rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);  /* Optional: Add shadow */
