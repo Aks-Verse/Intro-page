@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akhil - Verse</title> <!-- Title updated -->
+    <title>Akhil - Verse</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,6 +18,11 @@
 
     <!-- Tap to Continue Screen -->
     <div id="tap-screen">
+        <!-- Background Video for Tap Screen -->
+        <video autoplay loop muted playsinline id="tap-bg-video">
+            <source src="assets/tap-bg-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <p>Tap anywhere to enter <br> <span class="verse-text">&lt;akhil - verse&gt;</span></p>
     </div>
 
@@ -30,25 +35,25 @@
         </video>
 
         <!-- Buttons -->
-<div class="buttons">
-    <!-- Discord and Instagram in one row -->
-    <div class="btn-row">
-        <a href="https://discord.com/users/akhil98" class="btn discord">
-            <img src="assets/discord-logo.png" alt="Discord Logo">
-            Discord →
-        </a>
-        <a href="https://www.instagram.com/whampyr" class="btn instagram">
-            <img src="assets/instagram-logo.png" alt="Instagram Logo">
-            Instagram →
-        </a>
-    </div>
+        <div class="buttons">
+            <!-- Discord and Instagram in one row -->
+            <div class="btn-row">
+                <a href="https://discord.com/users/akhil98" class="btn discord">
+                    <img src="assets/discord-logo.png" alt="Discord Logo">
+                    Discord →
+                </a>
+                <a href="https://www.instagram.com/whampyr" class="btn instagram">
+                    <img src="assets/instagram-logo.png" alt="Instagram Logo">
+                    Instagram →
+                </a>
+            </div>
 
-    <!-- Full Introduction Button -->
-    <a href="#" class="btn full-intro" onclick="startSite()">
-        <img src="assets/full-intro-logo.png" alt="Full Intro Logo">
-        Full Introduction →
-    </a>
-</div>
+            <!-- Full Introduction Button -->
+            <a href="#" class="btn full-intro" onclick="startSite()">
+                <img src="assets/full-intro-logo.png" alt="Full Intro Logo">
+                Full Introduction →
+            </a>
+        </div>
     </div>
 
     <script src="script.js"></script>
