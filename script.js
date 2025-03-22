@@ -23,5 +23,12 @@ video.muted = false;
 
 muteBtn.addEventListener('click', () => {
     video.muted = !video.muted;  // Toggle mute
-    muteBtn.textContent = video.muted ? '🔇' : '🔊';  // Update icon
+    const icon = muteBtn.querySelector('i');
+    if (video.muted) {
+        icon.classList.remove('fa-volume-high');
+        icon.classList.add('fa-volume-xmark');  // Muted icon
+    } else {
+        icon.classList.remove('fa-volume-xmark');
+        icon.classList.add('fa-volume-high');  // Unmuted icon
+    }
 });
