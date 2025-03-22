@@ -49,6 +49,21 @@ body {
     font-weight: bold;
     cursor: pointer;
     z-index: 20;
+    text-align: center;
+}
+
+/* Styling for <akhil - verse> text */
+#tap-screen p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.verse-text {
+    font-size: 28px;
+    font-style: italic;
+    color: #fff;
+    opacity: 0.8;
+    margin-top: 10px;
 }
 
 /* Main Content */
@@ -104,6 +119,9 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 100%;  /* Full width for all buttons */
     position: relative;  /* For glowing effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Glowing Border Effect */
@@ -143,6 +161,7 @@ body {
 .btn img {
     width: 30px;  /* Adjust logo width */
     height: auto;  /* Maintain aspect ratio */
+    margin-right: 10px;  /* Space between logo and text */
 }
 
 /* Instagram Button */
