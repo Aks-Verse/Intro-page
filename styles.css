@@ -144,19 +144,7 @@ body {
     z-index: -1;
 }
 
-
-
-/* Mute/Unmute Button */
-#mute-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white; /* Ensure icon is white */
-    font-size: 20px;
-    cursor: pointer;
-    border-radi/* Overlay Video Container */
+/* Overlay Video Container */
 #overlay-video-container {
     position: relative;
     width: calc(100% - 30px);  /* Same width as buttons */
@@ -173,7 +161,19 @@ body {
     height: auto;
     display: block;
     border-radius: 12px;
-}us: 50%;
+}
+
+/* Mute/Unmute Button */
+#mute-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white; /* Ensure icon is white */
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
     width: 40px;
     height: 40px;
     display: flex;
