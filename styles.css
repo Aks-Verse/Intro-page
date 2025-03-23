@@ -146,13 +146,16 @@ body {
 
 /* Overlay Video Container */
 #overlay-video-container {
-    position: relative;
+    position: fixed; /* Fixed position */
+    top: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
     width: calc(100% - 30px);  /* Same width as buttons */
     max-width: 400px;  /* Same max-width as buttons */
-    margin-bottom: 20px;  /* Space between video and buttons */
     border-radius: 12px;
     overflow: hidden;  /* Ensure rounded corners for video */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 10; /* Ensure it's above other content */
 }
 
 /* Overlay Video */
